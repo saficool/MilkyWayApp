@@ -24,7 +24,9 @@ import { HotToastModule } from '@ngneat/hot-toast';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    HotToastModule.forRoot()
+    HotToastModule.forRoot({
+      position: 'top-center'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
